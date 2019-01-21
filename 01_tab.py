@@ -29,9 +29,9 @@ def sqrt_abs(x):
 
 funcList = [f1, f2, f3, np.sin, np.cos, np.tan, np.exp, sqrt_abs]
 
-xval = [ (i*0.1 - 0.5) for i in range(0,11) ]
+xval = [ (i*0.1 - 5.) for i in range(0,101) ]
 yval = [ funcList[ind-1](x) for x in xval ]
 
 plt.plot(xval,yval)
-plt.xlim(-0.3,0.3)
+plt.xlim(-3,3)
 plt.show()
