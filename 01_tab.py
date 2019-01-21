@@ -22,4 +22,5 @@ xval = [ (i*0.1 - 0.5) for i in range(0,11) ]
 yval = [ funcList[ind-1](x) for x in xval ]
 
 plt.plot(xval,yval)
+plt.xlim(-0.3,0.3)
 plt.show()
