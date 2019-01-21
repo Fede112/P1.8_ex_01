@@ -21,4 +21,5 @@ yval = [ funcList[ind-1](x) for x in xval ]
 # print(yval)
 
 plt.plot(xval,yval)
+plt.xlim(-0.3,0.3)
 plt.show()
