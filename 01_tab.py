@@ -3,21 +3,22 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 if (len(sys.argv)!=2):
-	print("Error: wrong number of arguments!")
+	print("Error: only one integer argument expected!")
+	print("Usage: ")
+	print("1: f(x)=x**2")
 	exit(1)
 
-idx = int(sys.argv[1])
+ind = int(sys.argv[1])
 
 def f1(x):
 	return x
 
 funcList = [f1, np.sin, np.cos, np.tan]
 
-xval = [ (i*0.1 - 0.5) for i in range(0,11) ]
-yval = [funcList[idx-1](x) for x in xval]
+funcList = [f2]
 
-print(xval)
-print(yval)
+xval = [ (i*0.1 - 0.5) for i in range(0,11) ]
+yval = [ funcList[ind-1](x) for x in xval ]
 
 plt.plot(xval,yval)
 plt.show()
