@@ -4,7 +4,9 @@ import matplotlib.pyplot as plt
 if (len(sys.argv)!=2):
 	print("Error: only one integer argument expected!")
 	print("Usage: ")
-	print("1: f(x)=x**2")
+	print("1: f(x)=x*")
+	print("2: f(x)=x**2")
+	print("3: f(x)=x**3")
 	exit(1)
 
 ind = int(sys.argv[1])
