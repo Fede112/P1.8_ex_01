@@ -1,4 +1,5 @@
 import sys
+import matplotlib.pyplot as plt
 
 if (len(sys.argv)!=2):
 	print("Error: wrong number of arguments!")
@@ -14,3 +15,6 @@ yval = [f(x) for x in xval]
 
 print(xval)
 print(yval)
+
+plt.plot(xval,yval)
+plt.show()
